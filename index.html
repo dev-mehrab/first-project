@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap-link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    
+  <div class="container ">
+    <div class="row">
+      <div class="col-sm-8 mx-auto bg-secondary p-3 mt-3">
+        <div class="row">
+          <h2 class="text-center text-white mt-3">Discound Calculator</h2>
+        </div>
+        <div class="row p-3">
+          <div class="col-sm-4">
+            <label for="product_pirce">Product price</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" type="number" id="product_pirce">
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col-sm-4">
+            <label for="dicount_type">Discount Type</label>
+          </div>
+          <div class="col-sm-8">
+            <select class="form-control" name="" id="dicount_type">
+              <option value="abc" selected>Select Type</option>
+              <option value="parsentage">Parsentage (%) Discount</option>
+              <option value="flat">Flat Discount</option>
+
+            </select>
+          </div>
+
+        </div>
+        <div class="row p-3">
+          <div class="col-sm-4">
+            <label for="diacount_amount">Discount Amount</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" type="number" id="diacount_amount">
+          </div>
+        </div>
+        <div class="row p-3 d-none" id="parsentage_amount_row">
+          <div class="col-sm-4">
+            <label for="parsentage_amount">Total parsentage amount</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" type="number" id="parsentage_amount">
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col-sm-4">
+            <label for="total_amount">Total Amount</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" type="number" id="total_amount" disabled>
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="btn-group">
+            <button class="btn btn-primary" id="cal">Calculate</button>
+            <button type="reset" class="btn btn-success" id="reset">Reset</button>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+  
+    <!-- bootstrap-link -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- jquery-link -->
+    <script src="./js/query.min.js"></script>
+    <script src="./js/calculate.js"></script>
+</body>
+</html>
